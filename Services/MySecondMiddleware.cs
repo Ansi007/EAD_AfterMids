@@ -6,10 +6,13 @@ public class MySecondMiddleware{
     }
 
     public async Task Invoke(HttpContext context){
-        if(context.Request.Path.Equals("/short")){
+        if (context.Request.Path.Equals("/short"))
+        {
             await context.Response.WriteAsync("HELLO I AM SHORT\n");
+            // This is short ciruiting
         }
-        else {
+        else
+        {
             await next(context);
         }
     }

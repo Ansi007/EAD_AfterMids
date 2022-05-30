@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    List<int> x = new List<int>();
+    x.Add(1);
+    x.Add(2);
+    x.Add(3);
+    x.Add(4);
+    x.Add(5);
+    ViewData["Key"] = "From View Data";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <table border = 1>
+        @foreach(var i in x)
+        {
+            <partial name = "MPV" model = "i"/>
+        }
+    </table>
+</div>
