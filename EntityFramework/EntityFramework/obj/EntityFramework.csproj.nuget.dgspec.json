@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anns\\source\\repos\\EntityFramework\\EntityFramework\\EntityFramework.csproj": {}
+    "C:\\Users\\Anns\\Desktop\\6th Semester Material\\EAD\\Lectures\\After Mids\\EntityFramework\\EntityFramework\\EntityFramework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anns\\source\\repos\\EntityFramework\\EntityFramework\\EntityFramework.csproj": {
+    "C:\\Users\\Anns\\Desktop\\6th Semester Material\\EAD\\Lectures\\After Mids\\EntityFramework\\EntityFramework\\EntityFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anns\\source\\repos\\EntityFramework\\EntityFramework\\EntityFramework.csproj",
+        "projectUniqueName": "C:\\Users\\Anns\\Desktop\\6th Semester Material\\EAD\\Lectures\\After Mids\\EntityFramework\\EntityFramework\\EntityFramework.csproj",
         "projectName": "EntityFramework",
-        "projectPath": "C:\\Users\\Anns\\source\\repos\\EntityFramework\\EntityFramework\\EntityFramework.csproj",
+        "projectPath": "C:\\Users\\Anns\\Desktop\\6th Semester Material\\EAD\\Lectures\\After Mids\\EntityFramework\\EntityFramework\\EntityFramework.csproj",
         "packagesPath": "C:\\Users\\Anns\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anns\\source\\repos\\EntityFramework\\EntityFramework\\obj\\",
+        "outputPath": "C:\\Users\\Anns\\Desktop\\6th Semester Material\\EAD\\Lectures\\After Mids\\EntityFramework\\EntityFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anns\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,16 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.5, )"
             }
