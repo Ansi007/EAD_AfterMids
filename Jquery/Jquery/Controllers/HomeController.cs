@@ -31,7 +31,14 @@ namespace Jquery.Controllers
 
         public PartialViewResult NewsPartialView()
         {
-            return PartialView("NewsPartialView");
+            //var context = new Context();
+            //
+            Student s = new Student();
+            var name = "Anns Shahbaz";
+            var rollNo = "BSEF19M007";
+            s.Name = name;
+            s.RollNo = rollNo;
+            return PartialView("NewsPartialView",s);
         }
 
     }
