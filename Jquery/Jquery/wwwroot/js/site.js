@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     $("#b1").click(function () {
-        $.get("/Home/NewsPartialView", function (result) {
+        $.post("/Home/NewsPartialView", {name: "Data"}, function (result) {
             $("#PartialPlaceHolder").html(result);
         });
     });
