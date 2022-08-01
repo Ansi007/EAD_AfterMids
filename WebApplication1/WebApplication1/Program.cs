@@ -6,6 +6,7 @@ app.Use( async (context,next) => {
     await context.Response.WriteAsync("Aoa Pakistan...\n");
     await next();
 } );
+
 app.Use(async (context, next) => {
     await context.Response.WriteAsync("Welcome to EAD\n");
     await next();
