@@ -1,0 +1,13 @@
+﻿@using Practice.Models;
+@model Room
+
+<div>
+    <p> Hi Everyone Welcome Back to my new Vlog</p>
+    @{
+        for(int i = 0; i < 10; i++)
+        {
+            <partial name = "RoomDetailPartialView" model = "i"/>
+        }
+    }
+    <vc:room-summary number = "1" size = "2"></vc:room-summary>
+</div>

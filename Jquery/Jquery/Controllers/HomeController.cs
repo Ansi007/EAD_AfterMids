@@ -29,10 +29,9 @@ namespace Jquery.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public PartialViewResult NewsPartialView(string name)
+        public PartialViewResult NewsPartialView(string name, string rollNo)
         {
             Student s = new Student();
-            var rollNo = "BSEF19M007";
             s.Name = name;
             s.RollNo = rollNo;
             return PartialView("NewsPartialView",s);
