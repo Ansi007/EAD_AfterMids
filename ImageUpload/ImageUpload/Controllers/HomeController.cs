@@ -12,9 +12,10 @@ namespace ImageUpload.Controllers
         private readonly IWebHostEnvironment _env;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IWebHostEnvironment env)
         {
             _logger = logger;
+            _env = env;
         }
 
         public HomeController(IWebHostEnvironment env)
@@ -47,10 +48,10 @@ namespace ImageUpload.Controllers
             {
                 Directory.CreateDirectory(path);
             }
-            using (FileStream stream = new FileStream(Path.Combine(path, "ProfilePic.jpg"))
+/*            using (FileStream stream = new FileStream(Path.Combine(path, "ProfilePic.jpg"))
             {
                 profileImage.CopyTo(stream);
-            };
+            };*/
             return View("ProfilePictures", profilePictures);
         }
     }
